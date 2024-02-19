@@ -29,7 +29,7 @@ data = data.rename(
 # PostgreSQL connection parameters
 db_username = "postgres"
 db_password = "datadive"
-db_host = "localhost"
+db_host = "127.0.0.1"
 db_port = "5432"
 db_name = "tech_layoffs_db"
 
