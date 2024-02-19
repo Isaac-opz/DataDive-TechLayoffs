@@ -17,12 +17,12 @@
 1. [Introducción](#introducción)
 2. [Participantes](#participantes)
 
-##Introducción
+## Introducción
 
 En el panorama de rápida evolución en el sector tecnológico, comprender las tendencias y los patrones de los ajustes de plantilla puede proporcionar información valiosa sobre la salud de la industria, los factores económicos en juego y las proyecciones futuras. Este proyecto está dedicado a un análisis en profundidad de los despidos en el sector tecnológico entre 2020 y 2024, un periodo marcado por importantes cambios globales que han afectado a todos los sectores.
 El objetivo principal de este análisis es descubrir patrones y perspectivas a partir de los datos de despidos tecnológicos. Esto implica examinar varias dimensiones, como la distribución geográfica de los despidos, la escala de los despidos en relación con el tamaño de las empresas, las tendencias temporales y la correlación entre los despidos y algunos factores económicos externos.
 
-##Participantes
+## Participantes
 
 - GRACE SANCHEZ
 - FEDERICO GONZALEZ
