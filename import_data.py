@@ -1,11 +1,28 @@
 import pandas as pd
+import os
 from sqlalchemy import create_engine
+from dotenv import load_dotenv
 
-# Excel file
-data = pd.read_excel("tech_layoffs.xlsx")
+# Load env variables
+load_dotenv()
 
-# Renames DataFrame columns to match SQL table column names
-data = data.rename(
+db_username = os.getenv("DB_USERNAME")
+db_password = os.getenv("DB_PASSWORD")
+db_host = os.getenv("DB_HOST")
+db_port = os.getenv("DB_PORT")
+db_name = os.getenv("DB_NAME")
+
+Tech_Layoffs = pd.read_excel("raw_data/tech_layoffs.xlsx")
+
+# delete '$' and ',' from Money_Raised_in_$_mil column
+Tech_Layoffs["Money_Raised_in_$_mil"] = Tech_Layoffs["Money_Raised_in_$_mil"].replace(
+    {"\$": "", ",": ""}, regex=True
+)
+Tech_Layoffs["Money_Raised_in_$_mil"] = pd.to_numeric(
+    Tech_Layoffs["Money_Raised_in_$_mil"], errors="coerce"
+)
+
+Tech_Layoffs = Tech_Layoffs.rename(
     columns={
         "#": "id",
         "Company": "company",
@@ -26,17 +43,12 @@ data = data.rename(
     }
 )
 
-# PostgreSQL connection parameters
-db_username = "postgres"
-db_password = "datadive"
-db_host = "127.0.0.1"
-db_port = "5432"
-db_name = "tech_layoffs_db"
-
-# SQLAlchemy engine
-engine = create_engine(
+# create connection to the db
+Tech_Layoffs_connection = create_engine(
     f"postgresql://{db_username}:{db_password}@{db_host}:{db_port}/{db_name}"
 )
 
-# Inserts data into the table
-data.to_sql("tech_layoffs", engine, if_exists="append", index=False)
+# export the dataframe to the db
+Tech_Layoffs.to_sql(
+    "tech_layoffs", Tech_Layoffs_connection, if_exists="replace", index=False
+)
