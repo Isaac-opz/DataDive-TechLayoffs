@@ -12,10 +12,11 @@
 
 `Proyecto ETL (Extract, transform and load)`
 
-## Tabla de Contenidos
+## Tabla de Instalación
 
 1. [Introducción](#introducción)
 2. [Participantes](#participantes)
+3.  Instalación]( Instalación)
 
 ## Introducción
 
@@ -27,3 +28,6 @@ El objetivo principal de este análisis es descubrir patrones y perspectivas a p
 - GRACE SANCHEZ
 - FEDERICO GONZALEZ
 - ISAAC PIEDRAHITA
+
+## Dashboard
+![Dashboard](README.md-data/dashboard.png)

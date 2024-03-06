@@ -15,14 +15,14 @@ Tech_Layoffs_connection = create_engine(
     f"postgresql://{db_username}:{db_password}@{db_host}:{db_port}/{db_name}"
 )
 
-# creates a session (a connection to the db)
+# creates a session (connection to the db)
 Session = sessionmaker(bind=Tech_Layoffs_connection)
 
 try:
     session = Session()
     print("Conectado con la base de datos")
 
-    # delete the rows with 'Unknown' in the stage column
+    # delete the rows with 'Unknown' values in the stage column
     Stage_delete_unkown_query = text(
         "DELETE FROM tech_layoffs WHERE stage = 'Unknown';"
     )
