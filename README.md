@@ -77,22 +77,32 @@ DB_NAME=''
 
 ## EDA charts
 
+*Figure 1: Layoffs by industry*
 ![Graph1](README.md-data/graph1.png)
 
-![Graph1](README.md-data/graph2.png)
+*Figure 2: Top 10 industries with higher layoffs*
+![Graph2](README.md-data/graph2.png)
 
-![Graph1](README.md-data/graph3.png)
+*Figure 3: Top 10 Industries with the Lowest Layoffs*
+![Graph3](README.md-data/graph3.png)
 
-![Graph1](README.md-data/graph4.png)
+*Figure 4: Top 10 Industries with the Most Money Raised*
+![Graph4](README.md-data/graph4.png)
 
-![Graph1](README.md-data/graph5.png)
+*Figure 5: Top Countries by Layoffs in each Continent*
+![Graph5](README.md-data/graph5.png)
 
-![Graph1](README.md-data/graph6.png)
+*Figure 6: Percentage of Layoffs by Continent*
+![Graph6](README.md-data/graph6.png)
 
-![Graph1](README.md-data/graph7.png)
+*Figure 7: Percentage of Layoffs by Continent and Country*
+![Graph7](README.md-data/graph7.png)
 
-![Graph1](README.md-data/graph8.png)
+*Figure 8: Top 10 Headquarters Locations with Most Layoffs*
+![Graph8](README.md-data/graph8.png)
 
-![Graph1](README.md-data/graph9.png)
+*Figure 9: Top 10 Headquarters Locations with Most Layoffs (Percentage)*
+![Graph9](README.md-data/graph9.png)
 
-![Graph1](README.md-data/graph10.png)
+*Figure 10: Temporal Evolution of Layoffs*
+![Graph10](README.md-data/graph10.png)
