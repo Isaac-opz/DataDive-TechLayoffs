@@ -2,6 +2,8 @@ import requests
 import yfinance as yf
 import pandas as pd
 
+# Step 1: Get the list of available actions
+
 api_url = "https://financialmodelingprep.com/api/v3/available-traded/list?apikey=7lZIU82kV1JVXJZP2zHFFlJLvdvsswj0"
 response = requests.get(api_url)
 
@@ -13,6 +15,7 @@ else:
     print("Error en la solicitud:", response.status_code)
     raise Exception("No se pudo obtener los datos de la API.")
 
+# Define the function to get financial information
 
 def get_financial_info(symbol, index, total):
     try:
@@ -38,7 +41,7 @@ def get_financial_info(symbol, index, total):
             'City': 'Error'
         }
 
-
+# Step 2: Get additional financial information for each action
 info_list = []
 total_symbols = len(df)
 for index, symbol in enumerate(df['symbol']):
@@ -47,6 +50,7 @@ for index, symbol in enumerate(df['symbol']):
 
 df_info = pd.DataFrame(info_list)
 
+# Combine the DataFrames
 df_final = pd.concat([df, df_info], axis=1)
 
 print(df_final.head())
