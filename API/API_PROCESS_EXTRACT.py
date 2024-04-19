@@ -2,7 +2,6 @@ import requests
 import yfinance as yf
 import pandas as pd
 
-# Paso 1: Obtener la lista de acciones disponibles
 api_url = "https://financialmodelingprep.com/api/v3/available-traded/list?apikey=7lZIU82kV1JVXJZP2zHFFlJLvdvsswj0"
 response = requests.get(api_url)
 
@@ -48,9 +47,7 @@ for index, symbol in enumerate(df['symbol']):
 
 df_info = pd.DataFrame(info_list)
 
-# Combinar los DataFrames
 df_final = pd.concat([df, df_info], axis=1)
 
-# Mostrar el resultado
 print(df_final.head())
 
