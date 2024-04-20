@@ -227,6 +227,7 @@ We can see how the size of industries before and after layoffs does not change d
 ## APIs EDA charts
 
 *Figure 1: Distribution of Companies by Country*
+
 ![Graph1](README.md-data/API-EDA-charts/chart1.png)
 
 *Figure 2: Top 10 most common industries in the market*
