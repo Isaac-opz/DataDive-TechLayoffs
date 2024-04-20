@@ -59,9 +59,8 @@ DB_NAME=''
 
 ## Participants
 
-- GRACE SANCHEZ
 - FEDERICO GONZALEZ
-- ISAAC PIEDRAHITA
+- ISAAC PIEDRAHITA 
 
 ## Findings
 
@@ -69,11 +68,20 @@ DB_NAME=''
 - Geographic trends show a significant focus on North America, with the San Francisco Bay Area, Seattle, and New York being notable for high numbers of layoffs.
 - Temporal trends highlighted a significant increase in layoffs in 2023, despite not being the year with the highest number of layoff records. The year 2020 also saw a spike in layoffs attributed to the pandemic.
 
-## Dashboard
+## Dashboards
 
-*Explore interactive visualizations and key findings in our [Dashboard overview](https://lookerstudio.google.com/reporting/a1ccda3f-5fa6-4e15-8237-0cdd0bcfad87).*
+<!--*Explore interactive visualizations and key findings in our [Dashboard overview](https://lookerstudio.google.com/reporting/a1ccda3f-5fa6-4e15-8237-0cdd0bcfad87).*-->
 
-![Dashboard](README.md-data/dashboard.png)
+<!--![Dashboard](README.md-data/dashboard.png)-->
+
+*API Dashboard:*
+[![DashboardAPI](README.md-data/API_Dashboard.png)](README.md-data/API_Dashboard.png)
+
+*Dimentional model 1st dashboard:*
+![Dashboard-dimensionalmodel1](README.md-data/dashboard_dimensional1.png)
+
+*Dimentional model 2nd dashboard:*
+![Dashboard-dimensionalmodel2](README.md-data/dashboard_dimensional2.png)
 
 ## EDA charts
 
@@ -107,4 +115,5 @@ DB_NAME=''
 *Figure 10: Temporal Evolution of Layoffs*
 ![Graph10](README.md-data/graph10.png)
 
-# https://github.com/Isaac-opz/DataDive-TechLayoffs.git
+<!-- https://github.com/Isaac-opz/DataDive-TechLayoffs.git -->
+
