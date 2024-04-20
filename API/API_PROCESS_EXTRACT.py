@@ -55,3 +55,4 @@ df_final = pd.concat([df, df_info], axis=1)
 
 print(df_final.head())
 
+df_final.to_csv('Data_API/dataset_api.csv', index=False)
