@@ -14,14 +14,20 @@
 
 ## Index
 
-1. [Introduction](#introduction)
-2. [Objectives](#objectives)
+## Table of Contents
+1. [DataDive - Tech Layoffs analysis](#datadive---tech-layoffs-analysis)
+2. [Introduction](#introduction)
+3. [Objectives](#objectives)
     1. [General Objectives](#general-objectives)
     2. [Specific Objectives](#specific-objectives)
-3. [Installation](#installation)
-4. [Participants](#participants)
-5. [Dashboard](#dashboard)
-6. [Findings](#findings)
+4. [Installation](#installation)
+5. [Participants](#participants)
+6. [Findings - EDA tech layoffs](#findings---eda-tech-layoffs)
+7. [Findings - Dimensional Model and Dashboard](#findings---dimensional-model-and-dashboard)
+8. [Findings - APIs](#findings---apis)
+9. [Dashboards](#dashboards)
+10. [Tech Layoffs Dataset EDA charts](#tech-layoffs-dataset-eda-charts)
+11. [APIs EDA charts](#apis-eda-charts)
 
 ## Introduction
 
