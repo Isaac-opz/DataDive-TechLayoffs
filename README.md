@@ -1,5 +1,7 @@
 # DataDive - Tech Layoffs analysis
 
+
+
 <p align="left">
     <img src="README.md-data/logo.png" alt="Logo del Proyecto" width="130" style="vertical-align: middle;">
 </p>
@@ -12,7 +14,20 @@
 
 `Proyecto ETL (Extract, transform and load)`
 
-## Index
+---
+```
+▓█████▄  ▄▄▄     ▄▄▄█████▓ ▄▄▄      ▓█████▄  ██▓ ██▒   █▓▓█████ 
+▒██▀ ██▌▒████▄   ▓  ██▒ ▓▒▒████▄    ▒██▀ ██▌▓██▒▓██░   █▒▓█   ▀ 
+░██   █▌▒██  ▀█▄ ▒ ▓██░ ▒░▒██  ▀█▄  ░██   █▌▒██▒ ▓██  █▒░▒███   
+░▓█▄   ▌░██▄▄▄▄██░ ▓██▓ ░ ░██▄▄▄▄██ ░▓█▄   ▌░██░  ▒██ █░░▒▓█  ▄ 
+░▒████▓  ▓█   ▓██▒ ▒██▒ ░  ▓█   ▓██▒░▒████▓ ░██░   ▒▀█░  ░▒████▒
+ ▒▒▓  ▒  ▒▒   ▓▒█░ ▒ ░░    ▒▒   ▓▒█░ ▒▒▓  ▒ ░▓     ░ ▐░  ░░ ▒░ ░
+ ░ ▒  ▒   ▒   ▒▒ ░   ░      ▒   ▒▒ ░ ░ ▒  ▒  ▒ ░   ░ ░░   ░ ░  ░
+ ░ ░  ░   ░   ▒    ░        ░   ▒    ░ ░  ░  ▒ ░     ░░     ░   
+   ░          ░  ░              ░  ░   ░     ░        ░     ░  ░
+ ░                                   ░               ░          
+```
+---
 
 ## Table of Contents
 1. [DataDive - Tech Layoffs analysis](#datadive---tech-layoffs-analysis)
