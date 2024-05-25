@@ -1,0 +1,71 @@
+{
+  "expectation_suite_name": "default",
+  "ge_cloud_id": null,
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "company"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "country"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "industry",
+        "value_set": [
+          "consumer",
+          "finance",
+          "hr",
+          "energy",
+          "transportation",
+          "healthcare",
+          "retail",
+          "product",
+          "media",
+          "ai",
+          "education",
+          "travel",
+          "food",
+          "data",
+          "hardware",
+          "logistics",
+          "sales",
+          "recruiting",
+          "crypto",
+          "marketing",
+          "manufacturing",
+          "security",
+          "real estate",
+          "aerospace",
+          "infrastructure",
+          "support",
+          "fitness",
+          "legal",
+          "construction"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "money_raised_in_mil",
+        "min_value": 0,
+        "max_value": 894.09
+      },
+      "meta": {}
+    }
+  ],
+  "data_asset_type": "Dataset",
+  "meta": {
+    "great_expectations_version": "0.18.13"
+  }
+}

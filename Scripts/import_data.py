@@ -12,7 +12,7 @@ db_host = os.getenv("DB_HOST")
 db_port = os.getenv("DB_PORT")
 db_name = os.getenv("DB_NAME")
 
-Tech_Layoffs = pd.read_excel("raw_data/tech_layoffs.xlsx")
+Tech_Layoffs = pd.read_excel("Data/RAW_tech_layoffs.xlsx")
 
 # delete '$' and ',' from Money_Raised_in_$_mil column
 Tech_Layoffs["Money_Raised_in_$_mil"] = Tech_Layoffs["Money_Raised_in_$_mil"].replace(

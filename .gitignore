@@ -1,4 +1,7 @@
 prueba.ipynb
+extra_tasks/
+.idea/
+gx/
 # Byte-compiled / optimized / DLL files
 venv/
 __pycache__/

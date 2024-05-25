@@ -30,4 +30,4 @@ df = pd.read_sql_query(sql_query, conn)
 conn.close()
 
 # Export DataFrame to CSV
-df.to_csv('data/tech_layoffs_db.csv', index=False)
+df.to_csv('Data/Tech_Layoffs_Cleaned.csv', index=False)
