@@ -3,7 +3,7 @@
 
 
 <p align="left">
-    <img src="README.md-data/logo.png" alt="Logo del Proyecto" width="130" style="vertical-align: middle;">
+    <img src="README.md-data/logo.png" alt="DataDive-Logo" width="130" style="vertical-align: middle;">
 </p>
 
 <p align="left"> 
@@ -30,19 +30,23 @@
 ---
 
 ## Table of Contents
-1. [DataDive - Tech Layoffs analysis](#datadive---tech-layoffs-analysis)
-2. [Introduction](#introduction)
-3. [Objectives](#objectives)
-    1. [General Objectives](#general-objectives)
-    2. [Specific Objectives](#specific-objectives)
-4. [Installation](#installation)
-5. [Participants](#participants)
-6. [Findings - EDA tech layoffs](#findings---eda-tech-layoffs)
-7. [Findings - Dimensional Model and Dashboard](#findings---dimensional-model-and-dashboard)
-8. [Findings - APIs](#findings---apis)
-9. [Dashboards](#dashboards)
-10. [Tech Layoffs Dataset EDA charts](#tech-layoffs-dataset-eda-charts)
-11. [APIs EDA charts](#apis-eda-charts)
+- [DataDive - Tech Layoffs analysis](#datadive---tech-layoffs-analysis)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Objectives](#objectives)
+    - [General Objectives](#general-objectives)
+    - [Specific Objectives](#specific-objectives)
+    - [EDA (Exploratory Data Analysis)](#eda-exploratory-data-analysis)
+    - [Dimensional Model and Dashboard](#dimensional-model-and-dashboard)
+    - [APIs](#apis)
+  - [Installation](#installation)
+      - [*dimensions:*](#dimensions)
+  - [Participants](#participants)
+  - [Findings - EDA tech layoffs](#findings---eda-tech-layoffs)
+  - [Findings - Dimensional Model and Dashboard](#findings---dimensional-model-and-dashboard)
+  - [Findings - APIs](#findings---apis)
+  
+If you wish to take a look at all the graphs you can check the `graphics` file [here](graphics.md)
 
 ## Introduction
 
@@ -77,7 +81,7 @@ The main goal of this analysis is to uncover patterns and insights from the data
 
 ## Installation
 
-In order to run the code and connect to the Database you'll need a `dotenv` file with the following credential, you also can work with the data by yourself using the [raw data](/raw_data/tech_layoffs.xlsx)
+In order to run the code and connect to the Database you'll need a `.env` file with the following credential, you also can work with the data by yourself using the [raw data](/raw_data/tech_layoffs.xlsx)
 
 ``` DB_USERNAME='
 DB_PASSWORD=''
@@ -119,7 +123,7 @@ CREATE TABLE fact_layoffs (
     FOREIGN KEY (company_id) REFERENCES dim_company (company_id)
 );
 ```
-*dimensions:*
+#### *dimensions:*
 
 *dim_time:*
 ```sql
@@ -165,12 +169,14 @@ python3 API/API_PROCESS_EXTRACT.py
 
 Remember that you can always check the Analysis and the EDA in the `API` folder for the API data and in the `code` folder for the dimensional model.
 
+If you want to setup Airflow to automate the process you can use the `airflow` folder and follow the instructions in the [airflow_setup](Further_documentation/airflow_setup.md) file.
 
+Also, you can check the `Further_documentation` folder for more information about the project, like the [kafka_setup](Further_documentation/kafka_setup.md) file.
 
 ## Participants
 
-- FEDERICO GONZALEZ
-- ISAAC PIEDRAHITA 
+- Federico Gonzalez
+- Isaac Piedrahita
 
 ## Findings - EDA tech layoffs
 
