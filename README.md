@@ -81,7 +81,7 @@ The main goal of this analysis is to uncover patterns and insights from the data
 
 ## Installation
 
-In order to run the code and connect to the Database you'll need a `.env` file with the following credential, you also can work with the data by yourself using the [raw data](/raw_data/tech_layoffs.xlsx)
+In order to run the code and connect to the Database you'll need a `.env` file with the following credential, you also can work with the data by yourself using the [raw data](Data/RAW_tech_layoffs.xlsx)
 
 ``` DB_USERNAME='
 DB_PASSWORD=''
